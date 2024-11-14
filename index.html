@@ -12,10 +12,9 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="title">
+    <div class="top-container">
             <div class="inner-conainer-1">
-                <span>------</span>! It's BOGO<span>----</span>
+                <span class="block-title">------YAY! It's BOGO---</span>
             </div>
             <div class="inner-conainer-2">
                 <div class="inner-top-box">
@@ -25,8 +24,8 @@
                             <span class="checkmark"></span>
                         </label>
                         <div class="left-tags">
-                            <span>1 Unit</span>
-                            <span>10% Off</span>
+                            <span class="unit">1 Unit</span>
+                            <span class="discount">10% Off</span>
                         </div>
                         <p>Standard Price</p>
                     </div>
@@ -44,24 +43,19 @@
                         </tr>
                         <tr>
                             <td>#1</td>
-                            <td>Alfreds Futterkiste</td>
-                            <td>Maria Anders</td>
-                        </tr>
-                        <tr>
-                            <td>#2</td>
                             <td>
                                 <div class="dropdown">
-                                    <button class="dropbtn-size">S</button>
+                                    <button class="dropbtn">S</button>
                                     <div class="dropdown-content">
-                                        <p>S</p>
-                                        <p>M</p>
-                                        <p>L</p>
+                                        <p>S <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                                        <p>M <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                                        <p>L <i class="fa fa-caret-down" aria-hidden="true"></i></p>
                                     </div>
                                 </div>
                             </td>
                             <td>
                                 <div class="dropdown">
-                                    <button class="dropbtn-colour">Black</button>
+                                    <button class="dropbtn">Black</button>
                                     <div class="dropdown-content">
                                         <p>Black</p>
                                         <p>White</p>
@@ -81,10 +75,9 @@
                             <span class="checkmark"></span>
                         </label>
                         <div class="left-tags">
-                            <span>1 Unit</span>
-                            <span>10% Off</span>
+                            <span class="unit">2 Unit</span>
+                            <span class="discount">20% Off</span>
                         </div>
-                        <p>Standard Price</p>
                     </div>
                     <div class="right">
                         <span class="price-tag">$10.00 USD</span>
@@ -99,7 +92,7 @@
                             <th>Colour</th>
                         </tr>
                         <tr>
-                            <td>#2</td>
+                            <td>#1</td>
                             <td>
                                 <div class="dropdown">
                                     <button onclick="myFunction()" class="dropbtn">S</button>
@@ -125,18 +118,18 @@
                             <td>#2</td>
                             <td>
                                 <div class="dropdown">
-                                    <button class="dropbtn-size">S</button>
-                                    <div class="dropdown-content">
-                                        <a href="#">S/a>
-                                            <a href="#">M</a>
-                                            <a href="#">L</a>
+                                    <button onclick="myFunction()" class="dropbtn">S</button>
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
                                     </div>
                                 </div>
                             </td>
                             <td>
                                 <div class="dropdown">
-                                    <button class="dropbtn-colour">Black</button>
-                                    <div class="dropdown-content">
+                                    <button onclick="myFunction()" class="dropbtn">Black</button>
+                                    <div id="myDropdown" class="dropdown-content">
                                         <a href="#">Black</a>
                                         <a href="#">Blue</a>
                                         <a href="#">White</a>
@@ -155,10 +148,9 @@
                             <span class="checkmark"></span>
                         </label>
                         <div class="left-tags">
-                            <span>1 Unit</span>
-                            <span>10% Off</span>
+                            <span class="unit">3 Unit</span>
+                            <span class="discount">30% Off</span>
                         </div>
-                        <p>Standard Price</p>
                     </div>
                     <div class="right">
                         <span class="price-tag">$10.00 USD</span>
@@ -186,8 +178,8 @@
                             </td>
                             <td>
                                 <div class="dropdown">
-                                    <button id="myDropdown" onclick="myFunction()" class="dropbtn">Black</button>
-                                    <div class="dropdown-content">
+                                    <button onclick="myFunction()" class="dropbtn">Black</button>
+                                    <div id="myDropdown" class="dropdown-content">
                                         <a href="#">Black</a>
                                         <a href="#">Blue</a>
                                         <a href="#">White</a>
@@ -218,12 +210,44 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr>
+                            <td>#3</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button id="myDropdown" onclick="myFunction()" class="dropbtn">S</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">S</a>
+                                        <a href="#">M</a>
+                                        <a href="#">L</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dropdown">
+                                    <button onclick="myFunction()" class="dropbtn">Black</button>
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#">Black</a>
+                                        <a href="#">Blue</a>
+                                        <a href="#">White</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
                     </table>
                 </div>
             </div>
+            <div class="price">
+                <span class="left-column">Free Delivery</span>
+                <span class="rigth-column">Total: $18.00 USD</span>
+            </div>
+            <button class="add-to-cart">
+                <span>+</span>
+                <span>Add to cart</span>
+            </button>
         </div>
 
         <script src="index.js"></script>
+        <script src="https://kit.fontawesome.com/ca88587752.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
