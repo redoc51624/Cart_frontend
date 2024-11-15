@@ -40,9 +40,11 @@ h2:after {
 }
 
 .top-container {
+  padding: 35px;
   display: block;
   width: 340px;
   margin: 0 auto;
+  border: 1px solid #FF6B82;
 }
 
 .popular-tag {
