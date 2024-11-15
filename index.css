@@ -11,7 +11,7 @@ h2:before,
 h2:after {
   content: "";
   flex: 1 1;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid lightgray;
   margin: auto;
   opacity: 0.5;
 }
@@ -134,10 +134,15 @@ table {
 
 td,
 th {
+  width: 60px;
+  float: left;
   font-weight: 100;
   text-align: left;
   padding: 8px;
   font-size: 14px;
+}
+tr td:first-child {
+  width: 10%;
 }
 
 /*DROPDOWN CSS*/
@@ -159,14 +164,18 @@ th {
   border-radius: 1.81px 0px 0px 0px;
   border: 0.9px 0px 0px 0px;
   opacity: 0px;
-
+  border: 1px solid lightgray;
 
 }
 
-/* .dropbtn:hover,
+.fa-caret-down {
+  float: right;
+}
+
+.dropbtn:hover,
 .dropbtn:focus {
   background-color: #FF6B82;
-} */
+}
 
 .dropdown {
   position: relative;
