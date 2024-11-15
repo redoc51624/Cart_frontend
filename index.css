@@ -1,21 +1,84 @@
 .block-title {
-  width: 143px;
-  height: 24px;
+  display: flex;
+  flex-direction: row;
   font-family: Inter;
   font-size: 20px;
   font-weight: 600;
-  line-height: 24.2px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
   color: #FF6B82;
+}
+
+h2:before,
+h2:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #000;
+  margin: auto;
+  opacity: 0.5;
+}
+
+.checkbox-round {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 2px solid #C8C8C8;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-round:checked {
+  background-color: #FF6B82;
+  border: 2px solid #FF6B82;
+}
+
+.checkbox-1 {
+  margin-bottom: 20px;
+  ;
 }
 
 .top-container {
   display: block;
   width: 340px;
   margin: 0 auto;
-  border: 2px solid #grey;
+}
+
+.popular-tag {
+  width: 105px;
+  font-size: 12px;
+  color: white;
+  background-color: #FF6B82;
+  position: absolute;
+  top: -8px;
+  left: 227px;
+  opacity: 1;
+  border-radius: 3px;
+
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.52px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+
+.inner-top-box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px solid lightgrey;
+  height: 74px;
+  margin-bottom: 20px;
+}
+
+.inner-bottom-box {
+  margin: 10px 0px;
+  display: none;
 }
 
 .left {
@@ -23,21 +86,33 @@
 }
 
 .right {
+  margin-left: 80px;
   float: right;
 }
 
 .discount {
-  width: auto;
+  width: 55px;
+  height: 17px;
+  padding: 2px 5px;
+  border-radius: 1px 0px 0px 0px;
   color: white;
   background-color: #FF6B82;
+}
+
+.left-tags {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.left-tags p {
+  margin: 0px;
 }
 
 .cross-price {
   display: block;
   width: 58px;
   height: 12px;
-  margin-left: 10px
-  opacity: 0.3px;
+  margin-left: 10px opacity: 0.3px;
   font-family: Inter;
   font-size: 10px;
   font-weight: 400;
@@ -57,9 +132,10 @@ table {
 
 td,
 th {
-  border: 1px solid #FF6B82;
+  font-weight: 100;
   text-align: left;
   padding: 8px;
+  font-size: 14px;
 }
 
 /*DROPDOWN CSS*/
@@ -124,15 +200,11 @@ th {
 /*Add to cart button*/
 
 .add-to-cart {
+  border: 0px;
   width: 342px;
   height: 40px;
-  top: 497px;
-  left: 58px;
-  padding: 10px 0px 0px 0px;
-  gap: 8px;
-  border-radius: 4px 0px 0px 0px;
+  border-radius: 4px;
   background-color: #FF6B82;
-  ;
   color: white;
 }
 
@@ -142,10 +214,7 @@ th {
 }
 
 .left-column {
-  width: 89px;
-  height: 17px;
   color: #FF6B82;
-  ;
   font-family: Inter;
   font-size: 14px;
   font-weight: 500;
